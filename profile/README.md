@@ -1,74 +1,66 @@
-# AFI Protocol – Repository Map
+# AFI Protocol
 
-This org is structured around how AFI actually works in the wild: the Machine, the Mint, the Ops, and the Lore.
+**Agentic Financial Intelligence (AFI)** — an open protocol for turning trading
+signals, produced by human or agentic analysts, into scored, auditable,
+replayable evidence.
 
----
+## Start here
 
-## 1. Runtime & DX (the Machine)
+- **[afi-protocol](https://github.com/AFI-Protocol/afi-protocol)** — the
+  organization map: authority hierarchy, repository roles, implementation
+  status, and entry points for developers, analysts, validators, operators,
+  and researchers.
+- **[afi-docs](https://github.com/AFI-Protocol/afi-docs)** — the documentation
+  hub.
 
-Core execution, DAG reactor, plugins, and developer experience.
+## Protocol authority
 
-- **afi-core** – Validators + mentors, production signal logic.
-- **afi-reactor** – Signal DAG / orchestrator, Codex integration, replay.
-- **afi-sdk-ts** / **afi-sdk-python** – TypeScript & Python SDKs for AFI reactors and nodes.
-- **afi-starters** – Minimal starter templates for agents, validators, and reactors.
+Protocol authority lives in exactly three repositories:
 
----
+1. **[afi-governance](https://github.com/AFI-Protocol/afi-governance)** —
+   accepted protocol decisions (protocol law), in
+   [`decisions/`](https://github.com/AFI-Protocol/afi-governance/tree/main/decisions).
+2. **[afi-config](https://github.com/AFI-Protocol/afi-config)** — canonical
+   schemas, registries, conventions, and known-answer tests.
+3. **[afi-math](https://github.com/AFI-Protocol/afi-math)** — canonical
+   deterministic math kernels and golden vectors.
 
-## 2. Protocol & On-chain (the Mint)
+## Repositories at a glance
 
-Canonical rules and token / minting logic – where validated intelligence gets turned into AFI.
+- **Protocol definition (must-conform):**
+  [afi-governance](https://github.com/AFI-Protocol/afi-governance) ·
+  [afi-config](https://github.com/AFI-Protocol/afi-config) ·
+  [afi-math](https://github.com/AFI-Protocol/afi-math)
+- **Governed implementation (replaceable via the same contracts):**
+  [afi-core](https://github.com/AFI-Protocol/afi-core) ·
+  [afi-reactor](https://github.com/AFI-Protocol/afi-reactor) ·
+  [afi-infra](https://github.com/AFI-Protocol/afi-infra) ·
+  [afi-gateway](https://github.com/AFI-Protocol/afi-gateway) ·
+  [afi-mint](https://github.com/AFI-Protocol/afi-mint) ·
+  [afi-token](https://github.com/AFI-Protocol/afi-token)
+- **Support and reference:**
+  [afi-docs](https://github.com/AFI-Protocol/afi-docs) ·
+  [afi-factory](https://github.com/AFI-Protocol/afi-factory) ·
+  [afi-cli-framework](https://github.com/AFI-Protocol/afi-cli-framework) ·
+  [afi-skills](https://github.com/AFI-Protocol/afi-skills) ·
+  [afi-xerc20](https://github.com/AFI-Protocol/afi-xerc20) ·
+  afi-tiny-brains *(private)*
+- **Research and records (non-canonical):**
+  [afi-econ](https://github.com/AFI-Protocol/afi-econ) ·
+  [afi-benchkit](https://github.com/AFI-Protocol/afi-benchkit) ·
+  [afi-artifacts](https://github.com/AFI-Protocol/afi-artifacts) ·
+  afi-labs *(private)*
+- **Organization surfaces:**
+  [afi-protocol](https://github.com/AFI-Protocol/afi-protocol) ·
+  [.github](https://github.com/AFI-Protocol/.github) ·
+  afi-ops *(private)*
 
-- **afi-protocol** – Formal protocol spec, ADRs, versioned definitions.
-- **afi-governance** – Governance logic, proposal schema, DAO + Epoch Pulse policy.
-- **afi-mint** – Agentic minting logic, thresholds, challenge windows, validation flows.
-- **afi-token** – Canonical token contract logic for AFI (Epoch Pulse, rewards, wiring).
+## Status
 
----
-
-## 3. Benchmarks (the Scoreboard)
-
-Evaluation and reproducible metrics.
-
-- **afi-benchkit** – Benchmarks, simulations, and PoI/PoInsight eval harness for AFI.
-
----
-
-## 4. Ops, Infra & Factory (the Nerves)
-
-Deployment, infra, and droid/augment workflows.
-
-- **afi-infra** – Base infra, vault utilities, images.
-- **afi-ops** – Deploy & health scripts, runbooks, operational SOPs.
-- **afi-factory** – Agent templates, droid manifests, Codex/bootstrap tasks.
-
----
-
-## 5. Docs, Site & Artifacts (the Lore)
-
-What humans (and some agents) read.
-
-- **afi-docs** – Developer and operator docs for AFI.
-- **afi-artifacts** – Versioned artifacts for AFI papers (schemas, codex, samples, replay).
-- **afi-research-site** – Public research / institute site for AFI.
-
----
-
-## 6. Brand, Config & Labs (the Style & Sandbox)
-
-Configuration, branding, and experiments.
-
-- **afi-config** – Codex schema, persona files, validator/mentor registries.
-- **afi-labs** – Private research and prototyping modules for AFI Protocol.
-- **.github** – Org-wide workflows, issue templates, policies, and this map.
-
----
-
-### Archived (Historical Only)
-
-The following repos are archived and kept for historical context:
-
-- **afi-agents** – Early CLI entry-points and manifests.
-- **afi-construct** – Early simulation dojo before the multi-repo layout.
-
-AFI is live in the repos above; everything else is fossils.
+The implemented lifecycle currently reaches `SCORED`: signals are ingested,
+validated against USS v1.1, scored by the governed UWR engine, and persisted
+to the canonical evidence store keyed by `signalId`. Post-`SCORED` finality,
+epoch accounting, rewards, settlement, and the external API surface are not
+yet implemented or not yet governed. See the
+[afi-protocol map](https://github.com/AFI-Protocol/afi-protocol) for the full
+picture.
