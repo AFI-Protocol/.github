@@ -10,7 +10,6 @@ Core execution, DAG reactor, plugins, and developer experience.
 
 - **afi-core** – Validators + mentors, production signal logic.
 - **afi-reactor** – Signal DAG / orchestrator, Codex integration, replay.
-- **afi-plugins** – Curated AFI & ElizaOS plugins (exchanges, data feeds, tools).
 - **afi-sdk-ts** / **afi-sdk-python** – TypeScript & Python SDKs for AFI reactors and nodes.
 - **afi-starters** – Minimal starter templates for agents, validators, and reactors.
 
@@ -60,7 +59,6 @@ What humans (and some agents) read.
 Configuration, branding, and experiments.
 
 - **afi-config** – Codex schema, persona files, validator/mentor registries.
-- **afi-assets** – Logos, brand kit, visual identity.
 - **afi-labs** – Private research and prototyping modules for AFI Protocol.
 - **.github** – Org-wide workflows, issue templates, policies, and this map.
 
