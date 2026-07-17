@@ -49,8 +49,7 @@ Protocol authority lives in exactly three repositories:
   [afi-artifacts](https://github.com/AFI-Protocol/afi-artifacts)
 - **Organization surfaces:**
   [afi-protocol](https://github.com/AFI-Protocol/afi-protocol) ·
-  [.github](https://github.com/AFI-Protocol/.github) ·
-  afi-ops *(private)*
+  [.github](https://github.com/AFI-Protocol/.github)
 
 ## Status
 
