@@ -46,8 +46,7 @@ Protocol authority lives in exactly three repositories:
 - **Research and records (non-canonical):**
   [afi-econ](https://github.com/AFI-Protocol/afi-econ) ·
   [afi-benchkit](https://github.com/AFI-Protocol/afi-benchkit) ·
-  [afi-artifacts](https://github.com/AFI-Protocol/afi-artifacts) ·
-  afi-labs *(private)*
+  [afi-artifacts](https://github.com/AFI-Protocol/afi-artifacts)
 - **Organization surfaces:**
   [afi-protocol](https://github.com/AFI-Protocol/afi-protocol) ·
   [.github](https://github.com/AFI-Protocol/.github) ·
