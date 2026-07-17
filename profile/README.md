@@ -41,7 +41,6 @@ Protocol authority lives in exactly three repositories:
 - **Support and reference:**
   [afi-docs](https://github.com/AFI-Protocol/afi-docs) ·
   [afi-factory](https://github.com/AFI-Protocol/afi-factory) ·
-  [afi-skills](https://github.com/AFI-Protocol/afi-skills) ·
   [afi-xerc20](https://github.com/AFI-Protocol/afi-xerc20) ·
   afi-tiny-brains *(private)*
 - **Research and records (non-canonical):**
