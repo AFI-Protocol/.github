@@ -25,6 +25,19 @@ Protocol authority lives in exactly three repositories:
 3. **[afi-math](https://github.com/AFI-Protocol/afi-math)** — canonical
    deterministic math kernels and golden vectors.
 
+## Operation
+
+AFI Protocol defines the interoperable rules; **AFI Research Institute is
+designated (non-exclusively) to operate AFI's official open reference services**
+— a hosted Gateway reference service for structured ingress and an
+oracle-ingress / CPJ-normalization reference service for message- and
+source-derived signals. Independent parties may run their own conforming
+Gateway, collectors, and infrastructure; conformance is defined by the
+contracts, not by who operates. Operating a reference service confers no
+protocol authority, and **no live deployment is claimed** — the pipeline is
+CI-proven, not hosted. See the
+[afi-protocol map](https://github.com/AFI-Protocol/afi-protocol) for detail.
+
 ## Repositories at a glance
 
 - **Protocol definition (must-conform):**
